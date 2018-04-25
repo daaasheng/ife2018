@@ -1,0 +1,19 @@
+{
+  "name": "san-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "zhaocchen@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "san": "^3.5.7",
+    "webpack": "^4.6.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.15"
+  }
+}
