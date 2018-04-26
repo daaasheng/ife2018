@@ -17,7 +17,24 @@
 	$ npx webpack index.js -o build.min.js --mode development
 	$ npx webpack --mode development
 
+	// 
+	./node_modules/webpack/bin/webpack.js
+
 目录
 
-————src
-  	|——index.js
+	|--build
+	|   |--webpack.config.js
+	|
+	|--dist
+	|   |--index.html
+	|
+	|--src
+	  	|——index.js
+
+#### npm run-script
+
+
+
+#### webpack.config.js
+
+	
