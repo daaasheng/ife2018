@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transform转换</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.box-wrap{
+		width: 300px;
+		height: 300px;
+		float: left;
+		border: solid 1px #000;
+	}
+	.box{
+		width: 100px;
+		height: 100px;
+		background: #3F6DED;
+	}
+	.box1{
+		transform: skewX(30deg);
+	}
+	.box2{
+		transform: scaleX(0.5);
+	}
+	.box3{
+		transform: rotate(45deg);
+	}
+	.box4{
+		transform: translate(10px, 20px);
+	}
+	.box5{
+		transform: skewX(30deg)scaleX(0.5)rotate(45deg)translate(10px, 20px);
+	}
+	</style>
+</head>
+<body>
+<div class="box-wrap">
+	<div class="box box0">
+		<span>box</span>
+	</div>
+</div>
+<div class="box-wrap">
+	<div class="box box1">
+		<span>向左倾斜30度</span>
+	</div>
+</div>
+<div class="box-wrap">
+	<div class="box box2">
+		<span>压缩2倍</span>
+	</div>
+</div>
+<div class="box-wrap">
+	<div class="box box3">
+		<span>旋转45度</span>
+	</div>
+</div>
+<div class="box-wrap">
+	<div class="box box4">
+		<span>x轴位移10px y轴位移20px</span>
+	</div>
+</div>
+<div class="box-wrap">
+	<div class="box box5">
+		<span>同时包含以上</span>
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
