@@ -1,0 +1,24 @@
+.active .ear-wrap .left {
+    transform: rotate(-45deg);
+}
+
+.active .ear-wrap .right {
+    transform: rotate(45deg);
+}
+
+.active .eye-circle {
+    transform: scaleY(0.5) translate(0, -20px);
+}
+
+.active .eye-core {
+    transform: scaleX(0.9) scaleY(1.6) translate(0, 10px);
+}
+
+.active .eye-bottom {
+    transform: translate(0, -20px);
+}
+
+.active .face-red {
+    opacity: 1.0;
+
+}
