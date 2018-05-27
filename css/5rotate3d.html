@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5rotate3d</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .wrap {
+            perspective: 300px;
+        }
+
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: 10s;
+            transform-origin: center center 100px;
+        }
+
+        .side {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .left {
+            left: -200px;
+            transform: rotateY(90deg);
+            transform-origin: right;
+            background: #EB492B;
+            opacity: 0.5;
+
+        }
+
+        .right {
+            right: -200px;
+            transform: rotateY(-90deg);
+            transform-origin: left;
+            background: #EBD32B;
+            opacity: 0.5;
+
+        }
+
+        .top {
+            top: -200px;
+            transform: rotateX(-90deg);
+            transform-origin: bottom;
+            background: #49EB2B;
+            opacity: 0.5;
+
+        }
+
+        .bottom {
+            bottom: -200px;
+            transform: rotateX(90deg);
+            transform-origin: top;
+            background: #2B33EB;
+            opacity: 0.5;
+
+        }
+
+        .front {
+            /*transform: scale(3, 3);*/
+        }
+
+        .back {
+            background: #eee;
+            opacity: 0.5;
+        }
+
+        .container:hover {
+            transform: rotateY(360deg)
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="container">
+        <!-- <div class="side front">front</div> -->
+        <div class="side back">back</div>
+        <div class="side left">left</div>
+        <div class="side right">right</div>
+        <div class="side top">top</div>
+        <div class="side bottom">bottom</div>
+    </div>
+</div>
+
+
+</body>
+</html>
