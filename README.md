@@ -11,3 +11,5 @@
 3. 会笑的猫儿[https://daaasheng.github.io/ife2018/css/3smileCat.html](https://daaasheng.github.io/ife2018/css/3smileCat.html)
 4. 翻转卡片[https://daaasheng.github.io/ife2018/css/4rotate.html](https://daaasheng.github.io/ife2018/css/4rotate.html)
 5. 旋转立方体[https://daaasheng.github.io/ife2018/css/5rotate3d.html](https://daaasheng.github.io/ife2018/css/5rotate3d.html)
+6. 切换图片动画[https://daaasheng.github.io/ife2018/css/6toggleImage.html](https://daaasheng.github.io/ife2018/css/6toggleImage.html)
+

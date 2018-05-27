@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6toggleImage</title>
+	<style type="text/css">
+	body{
+		margin: 0 auto;
+		padding: 0;
+	}
+	ul, li{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+		float: left;
+	}
+	.pic-list{
+		position: absolute;
+		bottom: 0;
+		left: calc(50% - 550px);
+		z-index: 2;
+	}
+	li img{
+		margin: 20px;
+		width: 180px;
+		height: 120px;
+		cursor: pointer;
+	}
+		.page{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+
+		.bg{
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background-image: url(./pic3.jpg); 
+			/*background-repeat: none-repeat; */
+			 background-size:100% 100%;
+			 animation: 2s;
+			/* animation: pathfirst 2s ease-out;*/
+		}
+
+		.bg1{
+			/*animation: 2s ease-out;*/
+			background-image: url(./pic1.jpg); 
+			transform: translate(0, -500px);
+		}
+
+		.bg2{
+			background-image: url(./pic2.jpg); 
+			/*transform: translate(0, -500px);*/
+		}
+		.bg3{
+			background-image: url(./pic3.jpg); 
+			/*transform: translate(0, -500px);*/
+		}
+		.bg4{
+			background-image: url(./pic4.jpg); 
+			/*transform: translate(0, -500px);*/
+		}
+		.bg5{
+			background-image: url(./pic5.jpg); 
+			/*transform: translate(0, -500px);*/
+		}
+
+
+		@keyframe pathfirst{
+			from { transform: translate(0, -500px); }
+			to { transform: translate(0, 0); }
+		}
+		@keyframe path2{
+			from { top: 350px; }
+			to { top: 0; }
+		}
+		@keyframe path3{
+			from { top: -500px; }
+			to { top: 0; }
+		}
+		@keyframe path4{
+			from { top: -500px; }
+			to { top: 0; }
+		}
+		@keyframe path5{
+			from { top: -500px; }
+			to { top: 0; }
+		}
+
+	</style>
+</head>
+<body>
+<div class="page" id="page">
+	<div class="bg" id="bg"></div>
+	<ul class="pic-list" onclick="toggleImage(event)">
+		<li><img src="./pic1.jpg"></li>
+		<li><img src="./pic2.jpg"></li>
+		<li><img src="./pic3.jpg"></li>
+		<li><img src="./pic4.jpg"></li>
+		<li><img src="./pic5.jpg"></li>
+	</ul>
+
+	<script type="text/javascript">
+		function toggleImage(e) {
+			if (e.target.nodeName === 'IMG') {
+				var index = e.srcElement.getAttribute('src').substr(-5, 1);
+				document.getElementById('bg').classList = ['bg'];
+				document.getElementById('bg').classList.add('bg'+index);
+			}
+		}
+	</script>
+</div>
+</body>
+</html>
