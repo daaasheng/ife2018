@@ -1,4 +1,5 @@
 .active .ear-wrap .left {
+    /*transition: width 2s;*/
     transform: rotate(-45deg);
 }
 
@@ -21,4 +22,69 @@
 .active .face-red {
     opacity: 1.0;
 
+}
+
+/* hover实现动画 */
+.face {
+    cursor: pointer;
+}
+
+/* 耳朵 */
+.ear-wrap .left {
+    transform-origin: middle center;
+    transition: all 2s ease-out;
+}
+
+.face:hover ~ .ear-wrap .left {
+    transform: rotate(-30deg);
+}
+
+.ear-wrap .right {
+    transform-origin: 50% 50%;
+    transition: all 2s ease-out;
+}
+
+.face:hover ~ .ear-wrap .right {
+    transform: rotate(30deg);
+}
+
+/* 眼睛 */
+.eye-wrap .eye-core {
+    transition: all 2s ease-in-out;
+}
+
+.face:hover .eye-wrap .eye-core {
+    transform: scaleX(0.9);
+}
+
+.eye-wrap .eye-bottom {
+    transition: all 2s ease-in;
+}
+
+.face:hover .eye-wrap .eye-bottom {
+    transform: translate(0, -10px);
+}
+
+/* 苹果肌 */
+.eye-wrap .face-red {
+    transform: scaleX(0.7) translate(0, 10px);
+    transition: all 2s ease-in;
+}
+
+.face:hover .eye-wrap .face-red {
+    opacity: 0.7;
+    transform: scaleX(1);
+}
+
+/* 胡子 */
+.mouth-wrap .left, .mouth-wrap .right {
+    transition: all 2s ease;
+}
+
+.face:hover .mouth-wrap .left {
+    border-radius: 0% 40% 50% 50%;
+}
+
+.face:hover .mouth-wrap .right {
+    border-radius: 40% 0% 50% 50%;
 }
