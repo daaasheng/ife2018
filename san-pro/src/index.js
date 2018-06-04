@@ -1,2 +1,2 @@
 // src/index.js
-document.body.style.background = 'red';
+document.body.style.color = 'red';
