@@ -1,0 +1,8 @@
+$color-orange: #f98a09;
+
+.title{
+  color: aqua;
+  &:hover{
+    color: $color-orange;
+  }
+}

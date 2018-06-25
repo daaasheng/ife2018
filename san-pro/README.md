@@ -27,16 +27,10 @@ webpack4.0 + san
 	|--build
 	|   |--webpack.config.js
 	|
-	|--dist
-	|   |--index.html
-	|
 	|--src
 	  	|——index.js
 
-#### npm run-script
 
-
-
-#### webpack.config.js
+$ npm run build
 
 	
